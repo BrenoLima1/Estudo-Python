@@ -1,6 +1,6 @@
 nome = 'Breno Lima'
 tamanho_nome = len(nome)
-nova_string = '';
+nova_string = ''
 
 for i in nome:
     nova_string += i + '*'
