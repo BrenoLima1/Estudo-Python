@@ -41,8 +41,9 @@ print(lista, 'Removido,', ultimo_valor)
 
 lista2 = ["A", "B", "C"]
 
-for letra in lista2:
-    print(lista2.index(letra), letra)
+for letra in enumerate(lista2) :
+    index, valor = letra
+    print(index, valor)
 
 nome, *resto = ['Luiz', 'Otávio','Miranda', 'Silva']
 print(nome, resto)
