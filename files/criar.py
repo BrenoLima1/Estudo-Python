@@ -1,3 +1,5 @@
+import os
+
 # Criando arquivos com Python + Context Manager with
 # Usamos a função open para abrir
 # um arquivo em Python (ele pode ou não existir)
@@ -19,8 +21,7 @@
 # json.dump = Gera um arquivo json
 # json.load
 
-caminho_arquivo = 'C:\\Users\\Buddha\\Desktop\\Nova pasta Atenção\\'
-caminho_arquivo += 'aula116.txt'
+caminho_arquivo = 'aula116.txt'
 
 # arquivo = open(caminho_arquivo, 'w')
 # arquivo.close
@@ -38,10 +39,11 @@ caminho_arquivo += 'aula116.txt'
 # with open(caminho_arquivo, 'r') as arquivo:
 #     print(arquivo.read())
 
-with open(caminho_arquivo, 'w+') as arquivo:
-    ...
-    # arquivo.write('Linha 1\n')
-    # arquivo.write('Linha 2\n')
-    # arquivo.writelines(
-    #     ('Linha 3\n', 'Linha 4\n')
-    # )
+with open(caminho_arquivo, 'w', encoding='utf8') as arquivo:
+    arquivo.write('Linha 1 Atenção\n')
+    arquivo.write('Linha 2\n')
+    arquivo.writelines(
+        ('Linha 3\n', 'Linha 4\n')
+    )
+
+os.unlink(caminho_arquivo)
