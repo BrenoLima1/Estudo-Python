@@ -1,0 +1,7 @@
+Success: Q lgl! (LogFileMixin)
+Error: qlqr coisa (LogFileMixin)
+Success: Q lgl! (LogFileMixin)
+Error: qlqr coisa (LogFileMixin)
+Success: Q lgl! (LogFileMixin)
+Success: Galaxy S está ligado (Smartphone)
+Error: Iphone está desligado (Smartphone)
