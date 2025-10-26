@@ -5,7 +5,7 @@
 # Faça em arquivos separados.
 
 import json
-from classe_json import CAMINHO_ARQUIVO, Pessoa
+from POO.classe_em_json import CAMINHO_ARQUIVO, Pessoa
 
 with open(CAMINHO_ARQUIVO, 'r', encoding = 'utf8') as arquivo:
     pessoa = json.load(arquivo)
